@@ -108,7 +108,7 @@ public class Defectreport extends iTF {
 			}}
 		catch(Exception e){
 			
-			System.out.println("wfwefwr");
+			System.out.println("Column is null");
 		}
 		
 
