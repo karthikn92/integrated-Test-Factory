@@ -3,14 +3,21 @@ package keyword;
 import java.io.File;
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
+import java.util.Properties;
+
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import wrappers.GenericWrappers;
 
-public class CallWrappersUsingKeyword {
+public class CallWrappersUsingKeyword extends GenericWrappers{
 
-
+	int Keyword_index =9;
+	int locator_index =10;
+	int data_index =11;
+	int result_index =12;
+	int TCid_index =0;
+	
 	public void getAndCallKeyword(String fileName) throws Exception{
 		FileInputStream file = new FileInputStream(new File(fileName));
 
@@ -32,16 +39,17 @@ public class CallWrappersUsingKeyword {
 			String locator = "" ;
 			String data = "" ;
 			String result= "";
+			
 			try {
-				keyword = sh.getRow(i).getCell(9).getStringCellValue();
-				locator = sh.getRow(i).getCell(10).getStringCellValue();
-				sh.getRow(i).getCell(11).setCellType(Cell.CELL_TYPE_STRING);
-				data   = sh.getRow(i).getCell(11).getStringCellValue();
-				sh.getRow(i).getCell(12).setCellType(Cell.CELL_TYPE_STRING);
-				result = sh.getRow(i).getCell(12).getStringCellValue();
+				keyword = sh.getRow(i).getCell(Keyword_index).getStringCellValue();
+				locator = sh.getRow(i).getCell(locator_index).getStringCellValue();
+				sh.getRow(i).getCell(data_index).setCellType(Cell.CELL_TYPE_STRING);
+				data   = sh.getRow(i).getCell(data_index).getStringCellValue();
+				sh.getRow(i).getCell(result_index).setCellType(Cell.CELL_TYPE_STRING);
+				result = sh.getRow(i).getCell(result_index).getStringCellValue();
 				
-				sh.getRow(i).getCell(0).setCellType(Cell.CELL_TYPE_STRING);
-				TCid = sh.getRow(i).getCell(0).getStringCellValue();
+				sh.getRow(i).getCell(TCid_index).setCellType(Cell.CELL_TYPE_STRING);
+				TCid = sh.getRow(i).getCell(TCid_index).getStringCellValue();
 				Filepath.ToReferFilePath.rowcount=i;	
 			}
 			 catch (NullPointerException e) {

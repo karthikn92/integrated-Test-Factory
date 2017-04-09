@@ -43,7 +43,7 @@ public class Mailconfigure {
 		{
 			try{
 				if(sheet.getRow(j)!=null){
-					Cell Text = sheet.getRow(j).getCell(14);
+					Cell Text = sheet.getRow(j).getCell(17);
 					if(Text!=null){
 						if(Text.getStringCellValue().contains("Fail")){
 							Fail++;
@@ -80,8 +80,8 @@ public class Mailconfigure {
 			message.setFrom(new InternetAddress("integratedTestFactory@ventechsolutions.com","iTF"));  
 			//	message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));  
 
-			//message.addRecipients(Message.RecipientType.TO, "");	
-			message.addRecipients(Message.RecipientType.CC, "");	
+			message.addRecipients(Message.RecipientType.TO, "nkarthikeyan@ventechsolutions.com");	
+			//message.addRecipients(Message.RecipientType.CC, "");	
 			//	message.addRecipients(Message.RecipientType.BCC, "");	
 			message.setSubject("Test Mail : iTF tool will send after Test Execution.");  
 			//message.setContent("./test.html","text/html" );
@@ -121,7 +121,9 @@ public class Mailconfigure {
 			multipart.addBodyPart(messageBodyPart);
 
 			// Send the complete message parts
-			message.setContent(multipart, "text/html;charset=utf-8");
+		//	message.setContent(multipart, "text/html;charset=utf-8");
+			
+			message.setContent(multipart);
 			Transport.send(message);  
 
 			System.out.println("message sent successfully...");  

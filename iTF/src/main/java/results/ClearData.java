@@ -40,7 +40,7 @@ public class ClearData {
 public void clearAutomated() throws IOException {
 		
 
-		FileInputStream filename = new FileInputStream(new File("./keywords/HomaUserManagement.xlsx")); 
+		FileInputStream filename = new FileInputStream(new File("./keywords/UserManagement.xlsx")); 
 		XSSFWorkbook Workbook = new XSSFWorkbook(filename);
 		XSSFSheet Sheet = Workbook.getSheet("ManSeperation");
 		
@@ -55,7 +55,7 @@ public void clearAutomated() throws IOException {
 				
 			}
 		}
-		FileOutputStream out = new FileOutputStream(new File("./keywords/HomaUserManagement.xlsx"));
+		FileOutputStream out = new FileOutputStream(new File("./keywords/UserManagement.xlsx"));
 		Workbook.write(out);
 		out.close();
 		}
@@ -64,7 +64,7 @@ public void clearAutomated() throws IOException {
 public void clearManual() throws IOException {
 	
 
-	FileInputStream filename = new FileInputStream(new File("./keywords/HomaUserManagement.xlsx")); 
+	FileInputStream filename = new FileInputStream(new File("./keywords/UserManagement.xlsx")); 
 	XSSFWorkbook Workbook = new XSSFWorkbook(filename);
 	XSSFSheet Sheet = Workbook.getSheet("AutSeperation");
 	
@@ -79,7 +79,7 @@ public void clearManual() throws IOException {
 			
 		}
 	}
-	FileOutputStream out = new FileOutputStream(new File("./keywords/HomaUserManagement.xlsx"));
+	FileOutputStream out = new FileOutputStream(new File("./keywords/UserManagement.xlsx"));
 	Workbook.write(out);
 	out.close();
 	}

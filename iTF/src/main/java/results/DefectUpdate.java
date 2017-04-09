@@ -113,7 +113,7 @@ public class DefectUpdate {
 
 						System.out.println("================");
 
-					}while(sheet.getRow(y+1).getCell(overalltesting_status).getCellType()==Cell.CELL_TYPE_BLANK);
+					}while(sheet.getRow(y+1).getCell(overalltesting_status).getCellType()==Cell.CELL_TYPE_BLANK && sheet.getRow(y+1).getCell(reqid_index).getCellType()==Cell.CELL_TYPE_BLANK);
 
 				}
 

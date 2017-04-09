@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import mail.Mailconfigure;
-import results.Chart;
+import results.MetricsGeneration;
 import results.ClearData;
 import results.ConsolidatingPassFail;
 import results.DefectUpdate;
@@ -65,8 +65,8 @@ public class iTF extends GenericWrappers {
 	public void afterSuite() throws IOException{
 		Reporter.endResult();
 
-		//Mailconfigure mc = new Mailconfigure();
-		//mc.mail();
+		Mailconfigure mc = new Mailconfigure();
+		mc.mail();
 	}
 
 	
@@ -84,7 +84,7 @@ public class iTF extends GenericWrappers {
 		ConsolidatingPassFail cpf = new ConsolidatingPassFail();
 		cpf.updateTestcases();
 
-		Chart chartresults = new Chart();
+		MetricsGeneration chartresults = new MetricsGeneration();
 		chartresults.writeChart();
 
 		MergeChart merge = new MergeChart();

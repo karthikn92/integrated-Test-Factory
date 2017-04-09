@@ -22,13 +22,12 @@ import com.microsoft.tfs.core.util.URIUtils;
 
 import keyword.Filepath;
 
-public class automationseperation {
+public class automationseperation extends GenericWrappers{
 
 	public static void upload_tc_totfs() throws IOException
 	{
-		String tc_filename="./keywords/HomaUserManagement.xlsx";
-
-
+ 	
+		
 		System.setProperty("com.microsoft.tfs.jni.native.base-directory", "./tfssdk/TFS-SDK-11.0.0/redist/native");
 
 		TFSTeamProjectCollection tpc=null;
@@ -46,7 +45,7 @@ public class automationseperation {
 		System.out.println(Type.getName());
 
 		//	I need to fetch the date from excel and no of rows
-		FileInputStream file = new FileInputStream(new File(tc_filename)); 
+		FileInputStream file = new FileInputStream(new File("./keywords/UserManagement.xlsx")); 
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheet("Testcases");
 
@@ -132,7 +131,7 @@ public class automationseperation {
 		}
 
 		file.close();
-		FileOutputStream obj = new FileOutputStream(new File(tc_filename));
+		FileOutputStream obj = new FileOutputStream(new File("./keywords/UserManagement.xlsx"));
 		workbook.write(obj);
 		obj.close();
 
@@ -141,7 +140,7 @@ public class automationseperation {
 
 	public static void automate_tc() throws IOException
 	{
-		String filename= "./keywords/HomaUserManagement.xlsx";
+		String filename= "./keywords/UserManagement.xlsx";
 
 		FileInputStream file = new FileInputStream(new File(filename)); 
 		XSSFWorkbook workbook = new XSSFWorkbook(file);

@@ -49,9 +49,10 @@ import keyword.Filepath;
 import wrappers.GenericWrappers;
 import wrappers.iTF;
 
-public class Chart extends GenericWrappers{
+public class MetricsGeneration extends GenericWrappers{
 
 	public  static JFreeChart Severity() throws IOException  {  
+		
 		FileInputStream chart_file_input = new FileInputStream(new File(Filepath.ToReferFilePath.FileName));
 		XSSFWorkbook workbook = new XSSFWorkbook(chart_file_input);
 		XSSFSheet sheet = workbook.getSheetAt(0);
