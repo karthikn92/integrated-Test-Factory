@@ -48,7 +48,7 @@ public class RunScripts extends iTF{
 
 					if(status.equalsIgnoreCase("Yes")){
 
-						FileInputStream fis1 = new FileInputStream("./Keywords/Module/TestcasesbyModule.xlsx");
+						FileInputStream fis1 = new FileInputStream("./Keywords/TestSuites/TestcasesbyModule.xlsx");
 						XSSFWorkbook workbook1 = new XSSFWorkbook(fis1);
 						XSSFSheet sheet1 = workbook1.getSheetAt(0);
 
@@ -63,8 +63,8 @@ public class RunScripts extends iTF{
 								if(value1.equalsIgnoreCase("Run"))
 								{
 
-									Filepath.ToReferFilePath.FileName="./keywords/"+row1.getCell(0).getStringCellValue()+".xlsx";
-									keywords.getAndCallKeyword("./keywords/"+row1.getCell(0).getStringCellValue()+".xlsx");
+									Filepath.ToReferFilePath.FileName="./keywords/Testcases/"+row1.getCell(0).getStringCellValue()+".xlsx";
+									keywords.getAndCallKeyword("./keywords/Testcases/"+row1.getCell(0).getStringCellValue()+".xlsx");
 
 								}
 							}

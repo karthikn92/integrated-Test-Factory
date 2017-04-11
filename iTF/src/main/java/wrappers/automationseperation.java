@@ -45,7 +45,7 @@ public class automationseperation extends GenericWrappers{
 		System.out.println(Type.getName());
 
 		//	I need to fetch the date from excel and no of rows
-		FileInputStream file = new FileInputStream(new File("./keywords/UserManagement.xlsx")); 
+		FileInputStream file = new FileInputStream(new File("./keywords/Testcases/UserManagement.xlsx")); 
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheet("Testcases");
 
@@ -131,7 +131,7 @@ public class automationseperation extends GenericWrappers{
 		}
 
 		file.close();
-		FileOutputStream obj = new FileOutputStream(new File("./keywords/UserManagement.xlsx"));
+		FileOutputStream obj = new FileOutputStream(new File("./keywords/Testcases/UserManagement.xlsx"));
 		workbook.write(obj);
 		obj.close();
 
@@ -140,7 +140,7 @@ public class automationseperation extends GenericWrappers{
 
 	public static void automate_tc() throws IOException
 	{
-		String filename= "./keywords/UserManagement.xlsx";
+		String filename= "./keywords/Testcases/UserManagement.xlsx";
 
 		FileInputStream file = new FileInputStream(new File(filename)); 
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
