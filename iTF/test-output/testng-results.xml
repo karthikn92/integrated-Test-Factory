@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51215" started-at="2017-04-12T10:59:00Z" finished-at="2017-04-12T10:59:52Z">
+  <suite name="Suite" duration-ms="25415" started-at="2017-04-13T12:17:01Z" finished-at="2017-04-13T12:17:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="51215" started-at="2017-04-12T10:59:00Z" finished-at="2017-04-12T10:59:52Z">
+    <test name="Test" duration-ms="25415" started-at="2017-04-13T12:17:01Z" finished-at="2017-04-13T12:17:26Z">
       <class name="keyword.RunScripts">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="beforeSuite" is-config="true" duration-ms="9051" started-at="2017-04-12T16:28:51Z" finished-at="2017-04-12T16:29:00Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:keyword.RunScripts@20398b7c]" name="beforeSuite" is-config="true" duration-ms="2884" started-at="2017-04-13T17:46:58Z" finished-at="2017-04-13T17:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="beforeTest" is-config="true" duration-ms="445" started-at="2017-04-12T16:29:00Z" finished-at="2017-04-12T16:29:01Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:keyword.RunScripts@20398b7c]" name="beforeTest" is-config="true" duration-ms="406" started-at="2017-04-13T17:47:01Z" finished-at="2017-04-13T17:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="startTestCase()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="startTestCase" is-config="true" duration-ms="0" started-at="2017-04-12T16:29:01Z" finished-at="2017-04-12T16:29:01Z">
+        <test-method status="PASS" signature="startTestCase()[pri:0, instance:keyword.RunScripts@20398b7c]" name="startTestCase" is-config="true" duration-ms="0" started-at="2017-04-13T17:47:01Z" finished-at="2017-04-13T17:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestCase -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="beforeMethod" is-config="true" duration-ms="35800" started-at="2017-04-12T16:29:01Z" finished-at="2017-04-12T16:29:37Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:keyword.RunScripts@20398b7c]" name="beforeMethod" is-config="true" duration-ms="15506" started-at="2017-04-13T17:47:01Z" finished-at="2017-04-13T17:47:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="runScripts()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="runScripts" duration-ms="5939" started-at="2017-04-12T16:29:37Z" finished-at="2017-04-12T16:29:43Z">
+        <test-method status="PASS" signature="runScripts()[pri:0, instance:keyword.RunScripts@20398b7c]" name="runScripts" duration-ms="5656" started-at="2017-04-13T17:47:17Z" finished-at="2017-04-13T17:47:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScripts -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="afterMethod" is-config="true" duration-ms="9009" started-at="2017-04-12T16:29:43Z" finished-at="2017-04-12T16:29:52Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:keyword.RunScripts@20398b7c]" name="afterMethod" is-config="true" duration-ms="3831" started-at="2017-04-13T17:47:22Z" finished-at="2017-04-13T17:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-04-12T16:29:52Z" finished-at="2017-04-12T16:29:52Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:keyword.RunScripts@20398b7c]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-04-13T17:47:26Z" finished-at="2017-04-13T17:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:keyword.RunScripts@13a5fe33]" name="afterSuite" is-config="true" duration-ms="27626" started-at="2017-04-12T16:29:52Z" finished-at="2017-04-12T16:30:19Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:keyword.RunScripts@20398b7c]" name="afterSuite" is-config="true" duration-ms="21706" started-at="2017-04-13T17:47:26Z" finished-at="2017-04-13T17:47:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
