@@ -36,9 +36,9 @@ public class iTF extends GenericWrappers {
 		ClearData manu = new ClearData();
 		manu.clearManual();
 
-		automationseperation atc = new automationseperation();
-		automationseperation.upload_tc_totfs();
-		automationseperation.automate_tc();
+//		automationseperation atc = new automationseperation();
+//		automationseperation.upload_tc_totfs();
+//		automationseperation.automate_tc();
 
 		Reporter.startResult();
 		//loadObjects();
@@ -96,8 +96,8 @@ public class iTF extends GenericWrappers {
 		DefectUpdate defects = new DefectUpdate();
 		defects.Defect();
 
-		Defectcreation tfs = new Defectcreation();
-		tfs.createBugsinTFS();
+//		Defectcreation tfs = new Defectcreation();
+//		tfs.createBugsinTFS();
 
 
 	}

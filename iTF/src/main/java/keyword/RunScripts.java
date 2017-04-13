@@ -26,7 +26,7 @@ public class RunScripts extends iTF{
 	}
 
 
-	String Refer_Excel_Filename = prop.getProperty("Refer_Excel_Filename");
+	//String Refer_Excel_Filename = prop.getProperty("Refer_Excel_Filename");
 	
 	@Test
 	public void runScripts() throws IOException {
@@ -34,7 +34,7 @@ public class RunScripts extends iTF{
 		CallWrappersUsingKeyword keywords = new CallWrappersUsingKeyword();
 
 		try {
-			FileInputStream fis = new FileInputStream(Refer_Excel_Filename);
+			FileInputStream fis = new FileInputStream("./Keywords/KeywordDriver.xlsx");
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheetAt(0);	
 
