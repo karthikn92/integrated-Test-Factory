@@ -25,13 +25,16 @@ public class RunScripts extends iTF{
 		testDescription = "integrated Test Factory";	
 	}
 
+
+	String Refer_Excel_Filename = prop.getProperty("Refer_Excel_Filename");
+	
 	@Test
 	public void runScripts() throws IOException {
 
 		CallWrappersUsingKeyword keywords = new CallWrappersUsingKeyword();
 
 		try {
-			FileInputStream fis = new FileInputStream("./Keywords/KeywordDriver.xlsx");
+			FileInputStream fis = new FileInputStream(Refer_Excel_Filename);
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			XSSFSheet sheet = workbook.getSheetAt(0);	
 

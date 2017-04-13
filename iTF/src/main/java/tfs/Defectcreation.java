@@ -55,10 +55,6 @@ public class Defectcreation extends iTF
 		int actualresult_index=4;
 		int title_scenario_index=1;
 
-
-
-
-
 		System.setProperty(Native, Native1);
 		Credentials credentials;
 
